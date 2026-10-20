@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /wp-admin/
-
-Sitemap: https://falaefluencia.com.br/sitemap.xml
