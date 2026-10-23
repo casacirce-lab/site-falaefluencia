@@ -3,6 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function () {
+  var c = null; try { c = localStorage.getItem('ff_consentimento'); } catch (e) {}
+  var v = c === 'aceito' ? 'granted' : 'denied';
+  gtag('consent', 'default', { analytics_storage: v, ad_storage: v, ad_user_data: v, ad_personalization: v,
+    functionality_storage: 'granted', security_storage: 'granted', wait_for_update: 500 });
+})();
+</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -31,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preload" href="/assets/fonts/PlayfairDisplay-normal-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/Inter-normal-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="/assets/img/hero_onda.webp?v=aeb8a27d" type="image/webp">
-<link rel="stylesheet" href="/assets/site.css?v=9d512fed">
+<link rel="stylesheet" href="/assets/site.css?v=1e03b383">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "@id": "https://falaefluencia.com.br/#clinica", "name": "Clínica Fala e Fluência", "url": "https://falaefluencia.com.br/", "logo": "https://falaefluencia.com.br/assets/icon-512.png", "image": "https://falaefluencia.com.br/assets/img/sala-espera.webp", "telephone": "+55 11 94953-5249", "description": "Clínica de fonoaudiologia especializada em fluência e gagueira, com atuação em fala, linguagem, autismo e motricidade orofacial.", "medicalSpecialty": "SpeechPathology", "isAcceptingNewPatients": true, "address": {"@type": "PostalAddress", "streetAddress": "Rua Dr. Renato Paes de Barros, 717, Edifício Iracema, 4º andar, conjunto 42", "addressLocality": "São Paulo", "addressRegion": "SP", "postalCode": "04530-001", "addressCountry": "BR"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "19:00"}], "sameAs": ["https://www.instagram.com/clinicafalaefluencia/"], "areaServed": {"@type": "Country", "name": "Brasil"}, "knowsAbout": ["Gagueira", "Fluência da fala", "Taquifemia", "Atraso de fala", "Transtorno do Espectro Autista", "Motricidade orofacial", "Terapia bilíngue"]}</script>
 </head>
 <body>
@@ -166,11 +176,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="base">
       <span>Responsáveis: Ignês Maia Ribeiro, fonoaudióloga, diretora clínica, CRFa 2-4231 · Mirela Pollini Caputo, fonoaudióloga, diretora administrativa, CRFa 2-12702.</span>
-      <a href="/politica-de-privacidade/">Política de privacidade</a>
+      <span><a href="/politica-de-privacidade/">Política de privacidade</a> · <a href="#" id="prefCookies">Preferências de cookies</a></span>
     </div>
   </div>
 </footer>
+<div class="cookies" id="avisoCookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
+  <p>Usamos cookies do Google Analytics para entender como o site é usado e melhorar a comunicação da clínica. Você escolhe se aceita. <a href="/politica-de-privacidade/">Política de privacidade</a></p>
+  <div class="cookies-acoes"><button type="button" class="cta" data-consentimento="aceito">Aceitar</button><button type="button" class="cta sec" data-consentimento="recusado">Recusar</button></div>
+</div>
 <a class="wpp" href="https://wa.me/5511949535249" target="_blank" rel="noopener" aria-label="Falar com a clínica pelo WhatsApp">WhatsApp</a>
-<script src="/assets/site.js?v=1" defer></script>
+<script src="/assets/site.js?v=e7efa5af" defer></script>
 </body>
 </html>

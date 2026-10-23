@@ -181,5 +181,12 @@
   footer .logo-neg { width: 230px; }
   .equipe-sub { margin: 64px 0 28px; }
   .politica h2 { font-size: 22px; margin-top: 8px; }
+  .cookies { position: fixed; left: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 40; max-width: 440px; background: var(--branco); border: 1px solid var(--borda); border-radius: 14px; box-shadow: 0 14px 40px rgba(26,74,48,.18); padding: 20px 22px; display: grid; gap: 14px; font-size: 14.5px; color: var(--texto); }
+  .cookies[hidden] { display: none; }
+  .cookies a { color: var(--esmeralda); }
+  .cookies-acoes { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cookies .cta { cursor: pointer; font-size: 14px; }
+  body.com-aviso .wpp { bottom: calc(18px + env(safe-area-inset-bottom, 0px)); }
+  @media (max-width: 620px) { .cookies { left: 12px; right: 12px; max-width: none; } body.com-aviso .wpp { display: none; } }
   nav.menu > a.cta { background: var(--verde); padding: 11px 18px; margin-left: 8px; }
   nav.menu > a.cta:hover { background: var(--escuro); color: var(--areia); }
